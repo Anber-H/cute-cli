@@ -1,12 +1,12 @@
 {
-  "name": "cute-cli",
+  "name": "taozi-cli",
   "version": "1.0.0",
   "description": "cli test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cute-cli -d",
-    "build": "cute-cli -b"
+    "dev": "taozi-cli -d",
+    "build": "taozi-cli -b"
   },
   "author": "anber",
   "license": "ISC",
