@@ -1,6 +1,7 @@
 {
-  "name": "cute-cli",
+  "name": "taozi-cli",
   "version": "1.0.0",
+  "private": false,
   "description": "cli test",
   "main": "index.js",
   "bin": {
