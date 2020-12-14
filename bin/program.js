@@ -1,4 +1,4 @@
-// 配置cute-cli的一些命令
+// 配置taozi-cli的一些命令
 const program = require('commander');
 const { SSL_OP_NO_TLSv1_1 } = require('constants');
 const path = require('path');
