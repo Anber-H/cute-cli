@@ -1,2 +1,2 @@
-# cute-cli
+# taozi-cli
 cli
