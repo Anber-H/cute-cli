@@ -1,6 +1,6 @@
 {
   "name": "taozi-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "cli test",
   "main": "index.js",
