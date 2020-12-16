@@ -12,7 +12,7 @@ function createProject(frame) {
   // 这里是将git模板下载到当前目录，并重新命名
   // 这里clone的是taozi-cli仓库的template分支
 
-  download('github:Anber-H/taozi-cli#template', name, function (err) {
+  download(frame, name, function (err) {
       if (err) {
         console.log(err)
           // throw err;
@@ -42,7 +42,12 @@ function selectConditions(){
       promptList
     )
     .then(answers => {
-      createProject();
+      console.log(answers.frame)
+      if (answers.frame=='vue'){
+        createProject('github:Anber-H/taozi-cli#template');
+      } else {
+        createProject('github:Anber-H/taozi-cli#react-template');
+      }
     })
 }
 
