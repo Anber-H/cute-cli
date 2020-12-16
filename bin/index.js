@@ -10,13 +10,11 @@ if (program.init) {
   return;
 }
 
-// 这边对应 -d 的命令，开发启动
 if (program.dev) {
   require('../dev-server');
   return;
 }
 
-// 这边对应 -b 的命令，生产编译
 if (program.build) {
   global.pablicPath = './';
   const config = require('../webpack.config');
