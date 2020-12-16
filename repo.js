@@ -7,7 +7,8 @@ const inquirer = require('inquirer');
 function createProject(frame) {
   const spinner = ora(chalk.yellow('正在创建项目...')).start();
   const name = pa[pa.length - 1];
-  download('github:Anber-H/taozi-cli#template', name, function (err) {
+
+  download(frame, name, function (err) {
       if (err) {
         console.log(err)
           return;
@@ -19,6 +20,7 @@ function createProject(frame) {
       process.exit();
   });
 }
+
 function selectConditions(){
   const promptList = [{
     type: 'rawlist',
@@ -35,7 +37,12 @@ function selectConditions(){
       promptList
     )
     .then(answers => {
-      createProject();
+      console.log(answers.frame)
+      if (answers.frame=='vue'){
+        createProject('github:Anber-H/taozi-cli#template');
+      } else {
+        createProject('github:Anber-H/taozi-cli#react-template');
+      }
     })
 }
 
